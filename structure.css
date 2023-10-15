@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*style and arrange the size of the division created*/
+/*set the main container to 80% and center*/
+
+#box3
+{
+	width:50%;
+	float:left;
+}
+
+#box4
+{
+	width:48%;
+	float:right;
+}
+
+#box5
+{
+	width:20%;
+	float:center;
+}
+
+
+
+#boxnewarrival
+{
+	width:100%;
+	float:center;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) 
+{   #box3, #box4
+  { width:100%; float:left;  }
+}
+/* CSS Document */
+

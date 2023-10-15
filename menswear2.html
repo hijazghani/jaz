@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menswear</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<center>
+<logo>
+<img src="image/hadylogo.png" width="300" height="auto" class="logo"></logo>
+</center>
+	
+<div class="topnav">
+  <a href="Home.html">Home</a>
+    <a href="about.html">About</a>
+	<a href="sales.html">Sales</a> 
+	<a href="newarrival.html">New Arrival</a> 
+	<a href="event.html">Event</a>  
+	<a class="active" href="menswear.html">Menswear</a>  
+	<a href="womenswear.html">Womenswear</a> 
+	<a href="contact.html">Contact</a>  
+	<a href="cart.html">Cart</a>  
+	<a href="policy.html">Policy</a> 
+	<a href="feedback.html">Feedback</a>
+
+	
+</div>	
+
+	
+<div class="dropdown">
+  <div class="dropdown-content">
+    <a href="menswear1.html">Menswear 1</a>  
+	<a href="menswear2.html">Menswear 2</a>
+  </div>
+</div>
+
+<div id= "banner">
+<img src="image/HADYbanner.png" width="100%" class="center"/>
+</div>
+
+	 <h7 style="text-align:center">Super Sunday</h7>
+
+<div class="scroll-container">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.13.jpeg" alt="supersunday m1" width="600" height="400">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.13 (1).jpeg" alt="superssunday m2" width="600" height="400">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.14.jpeg" alt="superssunday m3" width="600" height="400">
+</div>
+  
+  
+  
+  <br>
+  </br>
+  
+  <h7 style="text-align:center">PMC</h7>
+
+<div class="scroll-container">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.16.jpeg" alt="pmc m1" width="600" height="400">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.17.jpeg" alt="pmc m2" width="600" height="400">
+  <img src="image/menswear/WhatsApp Image 2023-09-30 at 23.18.16 (1).jpeg" alt="pmc m3" width="600" height="400">
+</div>
+  
+  
+  <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+
+<div id="footer">
+Copyright &copy; HADY OUTFITS COMPANY 2023
+</div>
+	
+	
+
+</body>
+</html>
